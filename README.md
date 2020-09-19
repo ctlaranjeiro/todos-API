@@ -1,3 +1,3 @@
 # Todos API
 
-This is a basic todos API, with authentication so the user can control lists and tasks. 
+Todos server, with authentication so the user can control lists and tasks. 
