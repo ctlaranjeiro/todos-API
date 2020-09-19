@@ -1,3 +1,3 @@
-# Todos App
+# Todos API
 
-This is a basic Todos app API, with authentication so the user can control lists and tasks. 
+This is a basic todos API, with authentication so the user can control lists and tasks. 
