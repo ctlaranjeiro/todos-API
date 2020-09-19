@@ -1,3 +1,3 @@
 # Todos App
----
-This is plain text.
+
+This is a basic Todos app, with authentication so the user can control lists and tasks.
