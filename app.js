@@ -67,7 +67,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // default value for title local
-app.locals.title = 'Todos API';
+app.locals.title = 'Todos-server';
 
 
 //ALLOW CROSS-ORIGIN INTERACTION:
@@ -83,6 +83,9 @@ const index = require('./routes/index');
 app.use('/', index);
 app.use('/api', require('./routes/auth-routes'));
 app.use('/api', require('./routes/user-routes'));
+app.use('/api', require('./routes/task-routes'));
+app.use('/api', require('./routes/list-routes'));
+
 
 
 module.exports = app;
