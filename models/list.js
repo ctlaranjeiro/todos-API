@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const listSchema = new Schema({
-  list: String,
+  listName: String,
   color: String,
   tasks: [{ type: Schema.Types.ObjectId, ref: 'Task' , autopopulate: true}],
   user: [{ type: Schema.Types.ObjectId, ref: 'User' }]
