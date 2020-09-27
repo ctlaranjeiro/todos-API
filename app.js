@@ -56,7 +56,7 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // ADD SESSION SETTINGS
 app.use(session ({
   secret: "batatas",
-  resave: true,
+  resave: false,
   saveUnitialized: true,
   rolling: true,
   cookie: { expires: 60000, sameSite: 'none', secure: false, httpOnly: false }
@@ -74,7 +74,7 @@ app.locals.title = 'Todos-server';
 app.use(
   cors({
     credentials: true,
-    origin: ['http://localhost:3000']
+    origin: ['http://localhost:3000', 'http://todos-app-cat.s3-website-eu-west-1.amazonaws.com/']
   })
 );
 
