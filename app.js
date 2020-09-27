@@ -59,7 +59,7 @@ app.use(session ({
   resave: true,
   saveUnitialized: true,
   rolling: true,
-  cookie: { expires: 60000, sameSite: 'none', secure }
+  cookie: { expires: 60000 }
 }));
 
 // PASSPORT SETTINGS
