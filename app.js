@@ -55,8 +55,8 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // ADD SESSION SETTINGS
 app.use(session ({
-  secret: "batatas",
-  resave: false,
+  secret: "todos-app",
+  resave: true,
   saveUnitialized: true,
   rolling: true,
   cookie: { expires: 60000, sameSite: 'none', secure: false, httpOnly: false }
