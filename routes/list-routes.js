@@ -37,7 +37,7 @@ listRoutes.post('/list', (req, res, next) => {
 // PUT update list details
 listRoutes.put('/list/:id', (req, res, next) => {
   const { id } = req.params;
-
+  
   if (!mongoose.Types.ObjectId.isValid(id)) {
     res.status(400).json({ message: 'Specified id is not valid'});
   }
