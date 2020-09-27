@@ -74,7 +74,7 @@ app.locals.title = 'Todos-server';
 app.use(
   cors({
     credentials: true,
-    origin: ['http://localhost:3000', 'http://localhost:5000']
+    origin: ['http://localhost:3000']
   })
 );
 
