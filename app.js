@@ -74,7 +74,7 @@ app.locals.title = 'Todos-server';
 app.use(
   cors({
     credentials: true,
-    origin: ['http://localhost:3000', 'https://todos-client.herokuapp.com/']
+    origin: ['http://localhost:3000', 'https://todos-client.herokuapp.com']
   })
 );
 
