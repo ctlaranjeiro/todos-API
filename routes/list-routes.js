@@ -9,10 +9,10 @@ const Task = require('../models/task');
 
 // POST new list
 listRoutes.post('/list', (req, res, next) => {
-  const { list, color, userId } = req.body;
+  const { listName, color, userId } = req.body;
 
   List.create({
-    list,
+    listName,
     color,
     user: userId
   })
