@@ -19,7 +19,7 @@ taskRoutes.post('/task', (req, res, next) => {
     .then(response => {
       List.findByIdAndUpdate(listId, {
         $push: { tasks: response._id }
-      })
+      }, {new: true})
         .then(response => {
           // ****** I get a delayed response - it doesn't include the most recent task created in the list
           res.status(200).json(response);
