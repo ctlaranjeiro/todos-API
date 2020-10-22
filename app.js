@@ -19,7 +19,8 @@ mongoose
   .connect(process.env.MONGODB_URI, {
     useCreateIndex: true,
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
   })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
